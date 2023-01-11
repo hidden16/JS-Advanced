@@ -1,6 +1,6 @@
 function largestNumber(numberOne, numberTwo, numberThree){
     const numbers = [numberOne, numberTwo, numberThree];
-    numbers.sort(function(a,b){return b-a});
+    numbers.sort((a,b) => b-a);
     console.log(`The largest number is ${numbers[0]}.`);
 }
 
