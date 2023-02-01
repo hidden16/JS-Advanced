@@ -1,0 +1,15 @@
+function solve(hero){
+    let result = [];
+
+    for (const iterator of hero) {
+        let[name, level, items] = iterator.split(' / ');
+        items = items ? items.split(', ') : [];
+        level = Number(level);
+        result.push({name, level, items});
+    }
+    console.log(JSON.stringify(result));
+}
+solve(['Isacc / 25 / Apple, GravityGun',
+'Derek / 12 / BarrelVest, DestructionSword',
+'Hes / 1 / Desolator, Sentinel, Antara']
+);
