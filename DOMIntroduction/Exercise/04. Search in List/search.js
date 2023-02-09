@@ -12,5 +12,5 @@ function search() {
          towns[index].style.textDecoration = '';
       }
    }
-   document.getElementById('result').innerHTML = `${matches} matches found`;
+   document.getElementById('result').textContent = `${matches} matches found`;
 }
